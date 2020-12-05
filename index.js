@@ -14,9 +14,9 @@ function submitData(name, email) {
       return response.json();
     })
     .then(function(object) {
-      document.body.innerHTML = object["id"];
+      document.body.innerHTML = object["id"]
     })
     .catch(function(error) {
-      document.body.innerHTML = error.message;
+      document.body.innerHTML = error.message
     })
   }
