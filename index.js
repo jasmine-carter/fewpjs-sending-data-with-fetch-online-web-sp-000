@@ -17,8 +17,8 @@ function submitData(name, email) {
       document.body.innerHTML = object["id"];
       return object
     })
-    .catch(function(message) {
+    .catch(function(error) {
       alert("Bad things! Ragnarők!");
-      console.log(message);
+      document.body.textContent = error.message;
     })
   }
