@@ -12,8 +12,10 @@ function submitData(name, email) {
   })
     .then(function(response) {
       return response.json()
+      console.log(reponse)
     })
     .then(function(object) {
+      console.log(object)
       document.body.innerHTML = object[ "id" ]
     })
     .catch(function(error) {
