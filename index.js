@@ -6,7 +6,7 @@ function submitData(name, email) {
       "Accept": "application/json"
     },
     body: JSON.stringify({
-      name: name
+      name: name,
       email: email
     })
   })
