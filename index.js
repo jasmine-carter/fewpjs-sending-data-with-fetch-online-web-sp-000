@@ -1,6 +1,6 @@
 let formData = {
-  dogName: "Byron",
-  dogBreed: "Poodle"
+  name: "Jamblin",
+  email: "jamblin@flatiron.com"
 };
 
 let configObj = {
@@ -11,7 +11,7 @@ let configObj = {
   body: JSON.stringify(formData)
 };
 
-fetch("http://localhost:3000/dogs", configObj)
+fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
