@@ -4,7 +4,7 @@ let formData = {
 };
 
 let configObj = {
-  method: "POST"
+  method: "POST",
   headers: {
     "Content-Type": "application/json",
     "Accept": "application/json"
