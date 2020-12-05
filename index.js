@@ -10,6 +10,7 @@ let configObj = {
   },
   body: JSON.stringify(formData)
 };
+
 fetch("http://localhost:3000/dogs", configObj)
   .then(function(response) {
     return response.json();
@@ -19,5 +20,5 @@ fetch("http://localhost:3000/dogs", configObj)
   })
   .catch(function(error) {
     alert("Bad things! Ragnarők!");
-   console.log(error.message);
- });
+    console.log(error.message);
+  });
