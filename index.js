@@ -1,6 +1,6 @@
 let formData = {
-  name: "Jamblin",
-  email: "jamblin@flatiron.com"
+  name: "Steve",
+  email: "steve@steve.com"
 };
 
 let configObj = {
