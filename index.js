@@ -1,6 +1,6 @@
 let formData = {
-  name: "Steve",
-  email: "steve@steve.com"
+  name: `${name}`,
+  email: `${email}`
 };
 
 let configObj = {
@@ -12,7 +12,7 @@ let configObj = {
   body: JSON.stringify(formData)
 };
 
-function submitData() {
+function submitData(name, email) {
   fetch("http://localhost:3000/users", configObj)
     .then(function(response) {
       return response.json();
